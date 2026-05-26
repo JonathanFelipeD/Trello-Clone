@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Text, Datetime, ForeignKey
+from sqlalchemy import Column, String, Text, DateTime, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
 from app.database import Base
 import uuid
@@ -10,4 +10,4 @@ class Board(Base):
     name = Column(String(150), nullable=False)
     description = Column(Text, nullable=True)
     owner_id = Column(UUID(as_uuid=True), ForeignKey('users.id'), nullable=False)
-    created_at = Column(Datetime, default=datetime.datetime.now(datetime.timezone.utc))
+    created_at = Column(DateTime, default=datetime.datetime.now(datetime.timezone.utc))

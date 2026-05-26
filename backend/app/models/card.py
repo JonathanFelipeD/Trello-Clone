@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Text, Integer, Enum, Datetime, Date, ForeignKey
+from sqlalchemy import Column, String, Text, Integer, Enum, DateTime, Date, ForeignKey
 from sqlalchemy.dialects.postgresql import UUID
 from app.database import Base
 import uuid
@@ -16,5 +16,5 @@ class Card(Base):
     assigned_to = Column(UUID(as_uuid=True), ForeignKey("users.id"), nullable=True)
     due_date = Column(Date, nullable=True)
     status = Column(Enum("todo", "in_progress", "done", name="card_status"), default="todo")
-    created_at = Column(Datetime, default=datetime.datetime.now(datetime.timezone.utc))
-    updated_at = Column(Datetime, default=datetime.datetime.now(datetime.timezone.utc))
+    created_at = Column(DateTime, default=datetime.datetime.now(datetime.timezone.utc))
+    updated_at = Column(DateTime, default=datetime.datetime.now(datetime.timezone.utc))

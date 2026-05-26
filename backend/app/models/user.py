@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String, Enum, Datetime
+from sqlalchemy import Column, String, Enum, DateTime
 from sqlalchemy.dialects.postgresql import UUID
 from app.database import Base
 import uuid
@@ -12,4 +12,4 @@ class User(Base):
     email = Column(String(150), unique=True, nullable=False)
     password_hash = Column(String, nullable=False)
     role = Column(Enum("member", "team_leader", "gerneral_leader", name="user_role"), default="member")
-    created_at = Column(Datetime, default=datetime.datetime.now(datetime.timezone.utc))
+    created_at = Column(DateTime, default=datetime.datetime.now(datetime.timezone.utc))
