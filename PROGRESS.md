@@ -9,9 +9,16 @@
 - [x] CRUD de Boards
 - [x] CRUD de Lists
 - [x] CRUD de Cards
+- [x] Configuração do frontend (Vite + React + TypeScript)
+- [x] Tipos TypeScript
+- [x] Serviço de API com axios
+- [x] Context de autenticação
 
 ## Próximos passos
+- [ ] Página de Login
+- [ ] Página de Register
+- [ ] Página de Boards
+- [ ] Página do Board com listas e cards
 - [ ] Drag and Drop
 - [ ] Sistema de permissões
 - [ ] Dashboard do líder
-- [ ] Frontend em React

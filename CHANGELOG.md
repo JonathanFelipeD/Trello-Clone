@@ -22,3 +22,14 @@
 - CRUD completo de Lists
 - CRUD completo de Cards
 - Autenticação via JWT nas rotas protegidas
+
+
+## [0.3.0] - 27/05/2026
+
+### Adicionado
+- Configuração do frontend com Vite + React + TypeScript
+- Instalação das bibliotecas: axios, react-router-dom, dnd-kit
+- Estrutura de pastas do frontend (components, pages, services, types, contexts)
+- Tipos TypeScript para User, Board, List e Card
+- Serviço de API com axios e interceptor de autenticação
+- Context de autenticação (login, logout, token persistido no localStorage)
