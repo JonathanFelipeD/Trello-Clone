@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.database import engine, Base
-from app.routers import auth, boards
+from app.routers import auth, boards, lists
 
 Base.metadata.create_all(bind=engine)
 
@@ -8,6 +8,7 @@ app = FastAPI()
 
 app.include_router(auth.router)
 app.include_router(boards.router)
+app.include_router(lists.router)
 
 @app.get("/")
 def root():
