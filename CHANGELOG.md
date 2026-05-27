@@ -13,3 +13,12 @@
   - Registro de usuário com senha criptografada (bcrypt)
   - Login com geração de token JWT
   - Schemas de validação de dados (UserCreate, UserResponse)
+
+
+## [0.2.0] - 27/05/2026
+
+### Adicionado
+- CRUD completo de Boards
+- CRUD completo de Lists
+- CRUD completo de Cards
+- Autenticação via JWT nas rotas protegidas
